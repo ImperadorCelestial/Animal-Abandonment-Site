@@ -1,0 +1,278 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /*Fundo da tela*/
+    color: #000000; /*Cor das fontes ("Escolha um animal" ou "Cadastro"*/
+    overflow: hidden;
+  }
+  
+  header 
+  {
+    background-color: #f7f7f7; /*Muda a fita superior do site*/
+    backdrop-filter: blur(5px);
+    padding: 1px;
+    text-align: center;
+    box-shadow: #000000;
+  }
+  
+  nav ul   /*Os títulos da página (home, adoção e cadastro)*/
+  {   
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 500px;
+  }
+  
+  nav ul li a /*A cor dos títulos etc*/
+  {
+    color: #F9A870; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section /*O tamanho dos botões*/
+  {
+    padding: 40px 20px;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  form /*A distância e a direção dos botões*/
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  form input, form button 
+  {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  #listaAnimais
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .animal-card 
+  {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .animal-card img 
+  {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  footer /*Sla não muda nada tmb*/
+  {
+    text-align: center;
+    background-color: #ff0000;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .logo-link /*O botão de home*/
+  {
+    font-size: 30px;
+    font-weight: bold;
+    color: #696cff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+
+    font-family: Cursive;
+    }
+  
+  .logo-link:hover 
+  {
+    color: #696cff; 
+  }
+  /*  
+  .adot
+  {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-right: 10px;
+  }*/
+
+  .form-box /*Box da tela de cadastro*/
+  {
+    width: 350px;
+    margin: 0px;
+    padding: 0px 0px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  
+  input  /*botão de cpf e senha*/
+  {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .google-btn 
+  {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #444;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Space Mono', monospace;
+    font-weight: 100px;
+    font-size: 15px;
+  }
+  
+  .facebook-btn 
+  {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 100px;
+    font-size: 15px;
+  }
+
+  .social-login /*div dos botões Google e Facebook*/
+  {
+    display: flex;
+    justify-content: space-between 1px;
+  }
+  
+  .submit-btn /*Botão de entrar*/
+  {
+    background-color: #252525;
+    border: 1px solid #252525;
+    color: #fff;
+    font-family: Poppins-Medium;
+    src: url('fonts/poppins/Poppins-Regular.ttf');
+    font-weight: 300;
+  } 
+
+  .two-box /*Junção das duas caixas de login*/
+  {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px;
+    margin-left: 480px;
+    margin-right: 480px;
+  }
+
+  .cad /*Botão de entrar*/
+  {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #F9A870;
+    color: #ffffff;
+    border-color: #F9A870;
+  }
+
+  .cad:hover  /*animação do botão*/
+  {
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake 
+  {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(2px, 1px); }
+    50% { transform: translate(-2px, -1px); }
+    75% { transform: translate(1px, -1px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  .adot /*Botão de adotar um pet*/
+  {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+    border: 3px solid; 
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #F9A870;
+    color: #ffffff;
+    border-color: #F9A870;
+  }
+
+  .adot:hover  /*animação do botão*/
+  {
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake 
+  {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(2px, 1px); }
+    50% { transform: translate(-2px, -1px); }
+    75% { transform: translate(1px, -1px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  h1 
+  {
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+  }
+
+  h2
+  {
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+  }
+
+  h3
+  {
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+  }
+/*
+  .cadbackground
+  {
+    background-color: #b92e2e;
+    padding: 10;
+
+  }
+  */
+  .cadbackground_2
+  {
+    background-color: #696cff;
+    width: 150px;
+    height: 100%; 
+  }
