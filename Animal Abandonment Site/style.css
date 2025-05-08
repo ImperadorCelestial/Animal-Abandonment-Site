@@ -78,15 +78,109 @@ body
     max-width: 100%;
     border-radius: 4px;
   }
+/*
+  body 
+  {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+  }
   
-  footer /*Sla não muda nada tmb*/
+  header 
   {
     text-align: center;
-    background-color: #ff0000;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 40px 20px 20px;
+    background-color: #ffe5b4;
+    color: #4d3200;
+  }
+  */
+  header h1 
+  {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header p 
+  {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .galeria 
+  {
+    display:inline-block;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    position: relative;
+    left:80px;
+  }
+  
+  .animal 
+  {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    margin: 40px;
+  }
+  
+  .animal:hover 
+  {
+    transform: scale(1.03);
+  }
+  
+  .animal img 
+  {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+   
+  }
+  
+  .info 
+  {
+    padding: 15px;
+  }
+  
+  .info h3 
+  {
+    margin-top: 0;
+    color: #d2691e;
+  }
+  
+  .info p 
+  {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  button 
+  {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover 
+  {
+    background-color: #e68000;
+  }
+  
+  footer 
+  {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe5b4;
+    font-size: 14px;
+    color: #4d3200;
   }
 
   .logo-link /*O botão de home*/
@@ -106,14 +200,6 @@ body
   {
     color: #696cff; 
   }
-  /*  
-  .adot
-  {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    margin-right: 10px;
-  }*/
 
   .form-box /*Box da tela de cadastro*/
   {
@@ -190,6 +276,8 @@ body
     margin: 50px;
     margin-left: 25%;
     margin-right: 25%;
+    height: 400px;
+
   }
 
   .cad /*Botão de entrar*/
@@ -205,13 +293,13 @@ body
 
   .cad:hover  /*animação do botão*/
   {
-    animation: shake 0.3s;
+    transition: transform 0.3s;
   }
   
   @keyframes shake 
   {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(2px, 1px); }
+    0% { transform: scale(1.03); }
+    25% { transform: scale(1.03); }
     50% { transform: translate(-2px, -1px); }
     75% { transform: translate(1px, -1px); }
     100% { transform: translate(0, 0); }
@@ -250,6 +338,11 @@ body
     color: #ffffff;
   }
 
+  .social
+  {
+    color: #000000;
+  }
+
   h2
   {
     font-family: 'Space Mono', monospace;
@@ -268,10 +361,16 @@ body
     margin: 0;
     background: linear-gradient(to bottom, #4267B2 50%, white 51%);
   }
-
+/*
   .adotbackground
   {
     height: 100vh;
     margin: 0;
     background: linear-gradient(to bottom, #4267B2 40%, white 41%);
+  }
+*/
+.galeria
+  {
+    display: inline block;
+    justify-content: center;
   }
