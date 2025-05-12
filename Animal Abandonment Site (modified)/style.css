@@ -419,3 +419,8 @@ body
     font-weight: 500;
     font-size: large;
   }
+
+  .acord
+  {
+    background-image: url(img/patas.png);
+  }
