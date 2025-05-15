@@ -1,0 +1,29 @@
+.index
+  {
+    background-image: url(img/patasBorradas.png);
+  }
+
+  .box
+  {
+    background-image: url(img/extendedDog.png);
+    background-size:1250px;
+    padding: 40;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    width: 1250px;
+    height: 450px;
+    border: 5px solid;
+    border-color: white;
+  }
+  
+  .h1box
+  {
+    color: #696cff;
+    font-family: Arial, sans-serif;;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+  }
