@@ -6,10 +6,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adoção Responsável</title>
-    <link rel="stylesheet" href="styleAcheiUmPet.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleGeral.css">
+    <title>Achei um Pet</title>
+    <link rel="stylesheet" href="Styles/styleGeral.css">
+    <link rel="stylesheet" href="Styles/styleAcheiUmPet.css">
     <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
@@ -119,13 +118,15 @@
             <div class="drop-area" id="drop-area">
               <input type="file" id="fileElem" accept="image/*" hidden />
               
-              <label for="fileElem" id="fileLabel">
-                <span class="logcad">Arraste uma imagem nesta área, ou clique para selecionar uma imagem.</span>
-              </label>
-              
-              <div class="preview" id="preview"></div>
-              
-              <p class="hint">Para obter máximo resultado, prefira fotos onde apareça apenas o pet em evidência, sem escritos adicionais.</p>
+              <div class="preview" id="preview">
+                <label for="fileElem" id="fileLabel">
+                  <span id="preview-text" class="logcad">Arraste uma imagem para cá, ou clique aqui para selecionar a imagem do pet</span>
+                </label>
+                <img id="preview-img" src="" alt="Pré-visualização" style="display: none;" />
+                <button type="button" id="remove-btn" style="display: none; margin-top: 10px;">Remover imagem</button>
+                
+                <p class="hint">Prefira fotos onde apareça só o pet, sem textos.</p>
+              </div>
             </div>
         </form>
       </div>
